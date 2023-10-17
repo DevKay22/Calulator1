@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>My Calculator</h1>
+</body>
+
+<script>
+    var operand1 = parseInt(prompt("Enter a number"));
+    var operand2 = parseInt(prompt("Enter another number"));
+
+    function add(x, y) {
+        var result = x + y;
+        alert(`The sum is ${result}`);
+    }
+
+    add(operand1, operand2);
+
+    
+    function difference(x, y) {
+        var result = x - y;
+        alert(`The difference is ${result}`);
+    }
+
+    difference(operand1, operand2);
+
+    
+    function product(x, y) {
+        var result = x * y;
+        alert(`The product is ${result}`);
+    }
+
+    product(operand1, operand2);
+
+    
+    function division(x, y) {
+        
+        var result = parseFloat(x/y);
+        var quotient = result.toFixed(2);
+        alert(`The quotient of the division is ${quotient}`);
+    }
+
+    division(operand1, operand2);
+
+
+
+
+
+</script>
+</html>
