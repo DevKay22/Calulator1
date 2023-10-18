@@ -7,17 +7,71 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
     <header>
         <h1>Calculator</h1>
     </header>
+    <section>
+        <main>
+        
+            <form id="inp">
+                <input type="text" class="input1" placeholder="00"   name="value1" id="inp1" required>
+                <div class="optor"><h2></h2></div>
+                <input type="text"  class="input2" placeholder="00"  name="value2" id="inp2" required>
+                <input type="text" placeholder="result"  name="result" id="inp3" readonly>
+            </form>
 
-    <main>
-        <form id="inp">
-            <input type="text" placeholder="00" id="inp" value="number">
-        </form>
 
-    </main>
+            <div class="operatorsContainer">
+                <div class="operators1">
+                    <div>
+                        <h3>+</h3>
+                    </div>
+                    <div>
+                        <h3>-</h3>
+                    </div>
+                </div>
+    
+                
+                <div class="operators2">
+                    <div>
+                        <h3>*</h3>
+                    </div>
+                    <div>
+                        <h3>/</h3>
+                    </div>
+                </div>
+    
+    
 
-    <script src="main.js"></script>
+            </div>
+
+            <footer>
+                <p> pettyCalc</p>
+               
+            </footer>
+           
+    
+        </main>
+    
+        
+
+    </section>
+
+   
+    
+    <script src="main.js">
+       var input1 = document.getElementsByClassName("input1").innerHTML;
+       var input2 = document.getElementsByClassName("input2").innerHTML;
+       var operator = document.getElementsByClassName("optor").innerHTML;
+
+       function add(x,y) {
+        var result = x + y;
+        return result;
+
+       }
+       add(input1, input2);
+
+    </script>
 </body>
 </html>

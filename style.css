@@ -2,11 +2,108 @@
     margin: 0;
     font-family: sans-serif;
     box-sizing: border-box;
+   
 }
 
 header{
-    margin-top: 3.5em;
+    margin: 2.1em 0;
     text-align: center;
     color: grey;
     font-weight: 800;
+    
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+#inp3{
+    padding: 0.8rem;
+    font-size: 1.8rem;
+    border-radius: 0.4em;
+    border: none;
+    width: 1.9rem;
+    /* border: 1px solid red; */
+    margin-left: 0;
+}
+
+
+
+main{
+    /* border: 1px solid black; */
+    height: 60vh;
+    width: 42%;
+    background: #21130d;
+}
+
+.equals{
+    /* border: 1px solid red; */
+    width: 2.1rem;
+    margin-right: 0;
+}
+
+.equals h2{
+    /* width: 5.6rem; */
+    height: 2.6rem;
+    text-align: center;
+    margin-top: 0.2rem;
+}
+
+#inp{
+    height: 2.5rem;
+    /* border: 1px solid red; */
+    margin: 0 0.6rem;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0.9rem ;
+    
+   
+}
+
+#inp input{
+    width: 20%;
+    border: none;
+    outline: none;
+    padding-left: 0.5rem;
+    /* border: 1px solid red; */
+}
+
+.operatorsContainer{
+    /* border: 1px solid green; */
+    margin: 1.2rem;
+    height: 14rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.operatorsContainer .operators1, .operatorsContainer .operators2{
+    /* border: 1px solid red; */
+    display: flex;
+    /* align-content: space-between; */
+    height: 8rem;
+    
+}
+
+.operatorsContainer .operators1 div, .operatorsContainer .operators2 div{
+    /* border: 1px solid blue; */
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   font-size: 1.6em;
+   margin: 0.5rem;
+   background-color: gray ;
+   border-radius: 0.3em;
+   
+
+}
+
+footer p{
+    color: gray;
+    
 }
